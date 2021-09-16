@@ -1,4 +1,4 @@
-import { PrinterIcon } from '@heroicons/react/outline';
+import { LocationMarkerIcon } from '@heroicons/react/solid';
 import { getCenter } from 'geolib';
 import { useState } from 'react';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
@@ -43,7 +43,8 @@ function Map({ searchResults }) {
                         <p 
                             onClick={() => setSelectedLocation(result)}
                             className="cursor-pointer text-2xl animate-bounce" aria-label="push pin">
-                            <PrinterIcon className="bg-red-400 h-5" />
+                            {/* <PrinterIcon className="bg-red-400 h-5" /> */}
+                            <LocationMarkerIcon className="h-5 red" />
                         </p>
                     </Marker>
 

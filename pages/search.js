@@ -22,7 +22,7 @@ function Search({searchResults}) {
         <div className="h-screen">
             <Header placeholder={`${location} | from ${formattedStartDate} | ${numberOfGuest} guests`} />
             
-            <main className="flex pb-6">
+            <main className="flex flex-col pb-6">
                 <section className="flex-grow pt-14 px-6">
                     <p className="text-xs">300+ stays between {range} for {numberOfGuest} guests</p>
                     <h1 className="text-3xl font-semibold mt-2 mb-6">Stays in {location}</h1>
